@@ -1,0 +1,67 @@
+﻿Analyzing hethonggoiyxebus...                                   
+
+   info - Constructors for public widgets should have a named 'key' parameter - lib\pages\bike_info_page.dart:3:7 - use_key_in_widget_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\bike_info_page.dart:8:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\bike_info_page.dart:11:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\bike_info_page.dart:12:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\bike_info_page.dart:14:18 - prefer_const_constructors
+   info - Constructors for public widgets should have a named 'key' parameter - lib\pages\bus_lookup_page.dart:3:7 - use_key_in_widget_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\bus_lookup_page.dart:9:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\bus_lookup_page.dart:13:20 - prefer_const_constructors
+   info - Parameter 'key' could be a super parameter - lib\pages\home_page.dart:13:9 - use_super_parameters
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:23:5 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:23:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:24:5 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:25:5 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:25:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:26:5 - prefer_const_constructors
+   info - Constructors for public widgets should have a named 'key' parameter - lib\pages\home_page.dart:50:7 - use_key_in_widget_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:59:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:60:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:61:27 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\home_page.dart:62:27 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:70:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:72:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:78:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:79:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:81:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:83:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:85:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:91:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:93:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:100:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:102:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:107:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:108:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:111:37 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:115:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:133:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:134:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:136:22 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\pages\home_page.dart:138:27 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:139:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:140:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:141:19 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:141:45 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:146:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:150:69 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:151:77 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:173:18 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:181:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:183:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\home_page.dart:203:11 - prefer_const_constructors
+   info - Constructors for public widgets should have a named 'key' parameter - lib\pages\metro_info_page.dart:3:7 - use_key_in_widget_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:22:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:30:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:35:20 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:36:22 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:38:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:45:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:55:39 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:68:21 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\metro_info_page.dart:71:30 - prefer_const_constructors
+   info - Constructors for public widgets should have a named 'key' parameter - lib\pages\waterbus_info_page.dart:3:7 - use_key_in_widget_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\waterbus_info_page.dart:8:16 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\waterbus_info_page.dart:11:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\pages\waterbus_info_page.dart:12:16 - prefer_const_constructors
+
