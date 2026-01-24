@@ -3,6 +3,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 import '../notifiers/user_profile_notifier.dart';
+import '../services/supabase_service.dart';
 import 'home_page.dart';
 import 'register_page.dart';
 
@@ -45,20 +46,29 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
 
     setState(() => _loading = true);
     try {
-      await Future.delayed(const Duration(milliseconds: 600));
-
       final input = _phoneOrEmailCtrl.text.trim();
-      await context.read<UserProfileNotifier>().setLoggedIn(
-        email: _usePhone ? '$input@phone.local' : input,
-        name: _guessNameFromInput(input),
-        phone: _usePhone ? input : '',
-      );
+      final email = _usePhone ? '$input@phone.local' : input;
+      final password = _passCtrl.text;
 
-      if (!mounted) return;
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (_) => const HomePage()),
-      );
+      // --- SUPABASE LOGIN ---
+      final res = await SupabaseService().signInWithEmail(email, password);
+      final user = res.user;
+
+      if (user == null) throw 'Đăng nhập không thành công';
+
+      // Update Local State
+      if (mounted) {
+        await context.read<UserProfileNotifier>().setLoggedIn(
+          email: user.email ?? email,
+          name: user.userMetadata?['full_name'] ?? _guessNameFromInput(input),
+          phone: _usePhone ? input : '',
+        );
+
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (_) => const HomePage()),
+        );
+      }
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(

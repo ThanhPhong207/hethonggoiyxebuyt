@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'login_page.dart';
+import '../services/supabase_service.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -42,13 +43,21 @@ class _RegisterPageState extends State<RegisterPage> {
 
     setState(() => _loading = true);
     try {
-      // Demo: bạn thay bằng API tạo tài khoản thật sau
-      await Future.delayed(const Duration(milliseconds: 700));
+      final email = _emailCtrl.text.trim();
+      final password = _passCtrl.text;
+      final name = _nameCtrl.text.trim();
+
+      // --- SUPABASE REGISTER ---
+      await SupabaseService().signUpWithEmail(
+        email, 
+        password,
+        data: {'full_name': name}
+      );
 
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Tạo tài khoản thành công!'),
+          content: Text('Tạo tài khoản thành công! Hãy đăng nhập.'),
           backgroundColor: _primary,
         ),
       );
@@ -57,6 +66,11 @@ class _RegisterPageState extends State<RegisterPage> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const LoginPage()),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Lỗi: $e')),
       );
     } finally {
       if (mounted) setState(() => _loading = false);

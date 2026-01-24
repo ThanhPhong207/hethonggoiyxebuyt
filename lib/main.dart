@@ -5,7 +5,14 @@ import 'notifiers/theme_notifier.dart';
 import 'notifiers/user_profile_notifier.dart';
 import 'pages/login_page.dart';
 
-void main() {
+import 'services/supabase_service.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // TODO: Hãy cập nhật URL và Anon Key trong lib/services/supabase_service.dart
+  await SupabaseService.initialize();
+
   runApp(
     MultiProvider(
       providers: [

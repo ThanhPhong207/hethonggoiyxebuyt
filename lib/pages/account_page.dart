@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../notifiers/theme_notifier.dart';
 import '../notifiers/user_profile_notifier.dart';
 import 'login_page.dart';
+import 'admin/admin_bus_data_page.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});
@@ -100,6 +101,15 @@ class AccountPage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
+                        _buildSettingItem(
+                          icon: Icons.admin_panel_settings_rounded,
+                          title: "Quản lý dữ liệu xe (Admin)",
+                          textColor: textColor,
+                          iconColor: Colors.orange,
+                          iconBgColor: isDark ? Colors.orange.withOpacity(0.1) : Colors.orange.shade50,
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const AdminBusDataPage())),
+                        ),
+                         Divider(height: 1, color: isDark ? Colors.white10 : Colors.grey.shade100, indent: 60, endIndent: 20),
                         _buildSettingItem(
                           icon: Icons.edit_note_rounded,
                           title: "Chỉnh sửa thông tin",
